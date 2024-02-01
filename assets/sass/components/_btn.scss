@@ -57,4 +57,36 @@
       box-shadow: 0 0.313rem 0.625rem rgba(#000,0.2);
      }
 
+     &-text{ //.btn-text
+      &,
+      &:link,
+      &:visited{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1rem;
+        color: $color-primary;
+        border-bottom: 1px solid;
+        padding: 5px;
+        text-transform: capitalize;
+        transition: all .4s ease-in-out;
+      }
+      span{
+        display: inline-block;
+      }
+
+      &:hover,&:focus{
+         transform: translateY(-3px);
+         background-color: $color-primary;
+         color: $color-white;
+         box-shadow: 0 10px 20px rgba(#000,.2);
+
+         span{
+           transform: translateX(3px);
+         }
+      }
+      &:active{
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(#000,.2);
+      }
+     }
 }
